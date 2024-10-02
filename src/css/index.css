@@ -1,0 +1,191 @@
+@font-face {
+    font-family: Rubik;
+    src: url("../assets/fonts/Rubik/static/Rubik-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: Rubik;
+    src: url("../assets/fonts/Rubik/static/Rubik-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: Rubik;
+    src: url("../assets/fonts/Rubik/static/Rubik-Light.ttf");
+    font-weight: 100;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #faf8f0;
+    font-family: "Roboto", Arial, system-ui, sans-serif;
+    font-weight: 400;
+}
+
+nav{
+    height: 56px;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu{
+    height: 54px;
+    padding: var(--padding-medium) ;
+    display: flex;
+    gap: var(--padding-medium);
+    align-items: center;
+    color: #756452;
+    background-color: transparent;
+}
+
+.menu:hover{
+    background-color: #e0dad1;
+    border-radius: var(--border-radius-medium);
+}
+
+.menu__icon{
+    height: 24px;
+    width: 24px;
+}
+
+.menu__title{
+    font-size: 48px;
+}
+
+.gamestatus{
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    gap: var(--padding-medium);
+    user-select: none;
+}
+
+.gamestatus__score-container{
+    padding: var(--padding-small) var(--padding-medium);
+    text-align: center;
+    border-radius: var(--border-radius-medium);
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+}
+
+.gamestatus__score-title {
+    font-size: var(--font-size-small);
+}
+
+.gamestatus__score-number {
+    font-size: var(--font-size-large);
+    font-weight: 700;
+}
+
+.gamestatus__highscore-container{
+    padding: var(--padding-small) var(--padding-medium);
+    text-align: center;
+    border: 2px solid var(--color-secondary);
+    border-radius: var(--border-radius-medium);
+    color: var(--color-primary);
+}
+
+.gamestatus__highscore-title {
+    font-size: var(--font-size-small);
+}
+
+.gamestatus__highscore-number {
+    font-size: var(--font-size-large);
+    font-weight: 700;
+}
+
+.utilities{
+    display: flex;
+    gap: var(--padding-medium);
+    align-items: center;
+}
+
+.utilities__feedback-link{
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.utilities__newgame-container{
+    padding: var(--padding-medium);
+    border-radius: var(--border-radius-medium);
+    color: var(--color-button-background);
+    background-color: var(--color-primary);
+}
+
+.utilities_newgame-text {
+    font-weight: 100;
+}
+
+main {
+    padding: var(--padding-medium);
+}
+
+.board {
+    margin: 0 auto;
+    width: 450px;
+    height: 450px;
+    display: grid;
+    gap: var(--padding-small);
+    padding: var(--padding-small);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    border-radius: var(--border-radius-medium);
+    background-color: var(--color-primary);
+}
+
+.bord__item {
+    background-color: var(--color-tile-lvl0);
+    border-radius: var(--border-radius-small);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bord__item--lvl1 {
+    color: var(--color-tile-font-dark);
+    background-color: var(--color-tile-lvl1);
+}
+
+.bord__item--lvl2 {
+    color: var(--color-tile-font-dark);
+    background-color: var(--color-tile-lvl2);
+}
+
+.bord__item--lvl3 {
+    color: var(--color-tile-font-light);
+    background-color: var(--color-tile-lvl3);
+}
+
+.bord__item--lvl4 {
+    color: var(--color-tile-font-light);
+    background-color: var(--color-tile-lvl4);
+}
+
+.bord__item--lvl5 {
+    color: var(--color-tile-font-light);
+    background-color: var(--color-tile-lvl5);
+}
+
+.bord__item--lvl6 {
+    color: var(--color-tile-font-light);
+    background-color: var(--color-tile-lvl6);
+}
+
+.bord__item--lvl7 {
+    color: var(--color-tile-font-light);
+    background-color: var(--color-tile-lvl7);
+}
+
+.board__item-number {
+    font-size: var(--font-size-extra-large);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primary);
+}
