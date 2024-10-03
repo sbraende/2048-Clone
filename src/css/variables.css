@@ -10,6 +10,7 @@
 
     --border-radius-small: 0.5rem;
     --border-radius-medium: 1rem;
+    --border-radius-large: 2rem;
 
     --color-button-background: #faf8f0;
     --color-primary: #988b7b;
@@ -27,4 +28,8 @@
     --color-tile-font-light: #ffffff;
     --color-tile-font-dark: #756452;
 
+    --color-action-primary: #dbd5c5;
+    --color-action-active: #bbab9a;
+
+    --color-footer-primary: #dbd5c5;
 }
