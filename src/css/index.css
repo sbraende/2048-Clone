@@ -47,7 +47,7 @@ header {
     display: flex;
     gap: var(--padding-medium);
     align-items: center;
-    color: #756452;
+    color: var(--color-menu);
     background-color: transparent;
 }
 
@@ -61,8 +61,18 @@ header {
     width: 24px;
 }
 
-.menu__title{
+.menu__title {
+    font-weight: 700;
+    color: var(--color-menu);
+}
+
+.menu__title-large{
     font-size: 48px;
+}
+
+.menu__title-small{
+    display: none;
+    font-size: 30px;
 }
 
 .gamestatus{
@@ -74,8 +84,10 @@ header {
 
 .gamestatus__score-container{
     padding: var(--padding-small) var(--padding-medium);
-    text-align: center;
     border-radius: var(--border-radius-medium);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: var(--color-primary);
     background-color: var(--color-secondary);
 }
@@ -91,7 +103,9 @@ header {
 
 .gamestatus__highscore-container{
     padding: var(--padding-small) var(--padding-medium);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 2px solid var(--color-secondary);
     border-radius: var(--border-radius-medium);
     color: var(--color-primary);
@@ -113,10 +127,14 @@ header {
     align-items: center;
 }
 
-.utilities__feedback-link{
+.utilities__feedback-link {
     font-weight: 400;
     text-decoration: none;
     color: var(--color-primary);
+}
+
+.utilities__feedback-link:hover {
+    text-decoration: underline;
 }
 
 .utilities__newgame-container{
@@ -126,8 +144,14 @@ header {
     background-color: var(--color-primary);
 }
 
-.utilities_newgame-text {
+.utilities__newgame-text {
     font-weight: 100;
+}
+
+.utilities__newgame-icon {
+    height: 24px;
+    height: 24px;
+    display: none;
 }
 
 main {
@@ -247,6 +271,87 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        gap: var(--padding-extra-small);
+    }
 
+    .menu {
+        height: fit-content;
+        padding: var(--padding-small);
+    }
+
+    .menu__title-large {
+        display: none;
+    }
+
+    .menu__title-small{
+        display: block;
+    }
+
+    .navbar {
+        width: 100%;
+        height: fit-content;
+        padding: var(--padding-small);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .menu__title-small {
+        justify-self: center;
+        grid-column: 2/3;
+    }
+
+    .utilities__newgame-container {
+        padding: var(--padding-small);
+        background-color: transparent;
+    }
+
+    .utilities__newgame-text {
+        display: none;
+    }
+
+    .utilities__newgame-icon {
+        display: block;
+    }
+
+    .gamestatus {
+        width: 100%;
+        grid-column: 1/4;
+        grid-row: 2/3;
+        gap: var(--padding-small);
+    }
+
+    .gamestatus__score-container {
+        width: 50%;
+    }
+
+    .gamestatus__highscore-container {
+        width: 50%;
+    }
+
+    main{
+        padding: var(--padding-small);
+    }
+
+    .actions {
+        margin-top: var(--padding-medium);
+    }
 }
 
+@media screen and (max-width: 640px) {
+    .gamestatus__score-container {
+        height: fit-content;
+        padding: var(--padding-small);
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .gamestatus__highscore-container {
+        height: fit-content;
+        padding: var(--padding-small);
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+    
