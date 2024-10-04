@@ -4,40 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2048</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <button class="menu">
+    <header class="navbar">
+        <div class="menu">
+            <button class="menu-button">
                 <img class="menu__icon" src="./assets/icons/menu.svg" alt="hamburger menu">
                 <h1 class="menu__title-large menu__title">2048</h1>
             </button>
-            <h3 class="menu__title-small menu__title">2048</h3>
-            <div class="gamestatus">
-                <div class="gamestatus__score-container">
-                    <h3 class="gamestatus__score-title">SCORE</h3>
-                    <h3 class="gamestatus__score-number">1132</h3>
-                </div>
-                <div class="gamestatus__highscore-container">
-                    <h3 class="gamestatus__highscore-title">BEST</h3>
-                    <h3 class="gamestatus__highscore-number">1132</h3>
-                </div>
+        </div>
+        <h3 class="menu__title-small menu__title">2048</h3>
+        <div class="gamestatus">
+            <div class="gamestatus__score-container">
+                <h3 class="gamestatus__category">SCORE</h3>
+                <h3 class="gamestatus__value">1132</h3>
             </div>
+            <div class="gamestatus__highscore-container">
+                <h3 class="gamestatus__category">BEST</h3>
+                <h3 class="gamestatus__value">1132</h3>
+            </div>
+        </div>
 
-            <div class="utilities">
-                <div class="utilities__feedback-container">
-                    <a class="utilities__feedback-link" href="#">Give feedback</a>
-                </div>
-                <button class="utilities__newgame-container">
-                    <h3 class="utilities__newgame-text">New Game</h3>
-                    <img class="utilities__newgame-icon" src="./assets/icons/rotate-cw.svg" alt="New game">
-                </button>
+        <div class="utilities">
+            <div class="utilities__feedback-container">
+                <a class="utilities__feedback-link" href="#">Give feedback</a>
             </div>
-        </nav>
+            <button class="utilities__newgame-container">
+                <h3 class="utilities__newgame-text">New Game</h3>
+                <img class="utilities__newgame-icon" src="./assets/icons/rotate-cw.svg" alt="New game">
+            </button>
+        </div>
     </header>
 
     <main>

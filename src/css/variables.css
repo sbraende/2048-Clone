@@ -6,8 +6,9 @@
 
     --font-size-small: 0.75rem;
     --font-size-medium: 1rem;
-    --font-size-large: 1.5rem;
-    --font-size-extra-large: 3rem;
+    --font-size-large: 1.25rem;
+    --font-size-extra-large: 1.5rem;
+    --font-size-xxl: 3rem;
 
     --border-radius-small: 0.5rem;
     --border-radius-medium: 1rem;
@@ -15,6 +16,7 @@
 
     --color-button-background: #faf8f0;
     --color-primary: #988b7b;
+    --color-primary-dark: #786a58;
     --color-secondary: #e9e7d9;
 
     --color-menu: #756452;
@@ -31,6 +33,10 @@
     --color-tile-font-light: #ffffff;
     --color-tile-font-dark: #756452;
 
+    --color-tile-highlight-normal: #d7c9ba;
+    --color-tile-highlight-bright: #e1dbd3;
+    --color-tile-shadow: #756452;
+    
     --color-action-primary: #dbd5c5;
     --color-action-active: #bbab9a;
 
